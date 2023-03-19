@@ -1,0 +1,130 @@
+<!-- HTML Docu Topic: Forms -->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Forms Docs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Oswald:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link href="static/css/styles.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>
+        &lt;form&gt;: The Form element
+    </h1>
+</header>
+<main>
+    <section id="form_tag">
+        <h3>Attributes of a form</h3>
+        <table>
+            <thead >
+            <tr>
+                <td class="table_header">Tag</td>
+                <td class="table_header">Explanation</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="tag_table">
+                    accept
+                </td>
+                <td>
+                    Comma-separated content types the server accepts.
+                </td>
+            </tr>
+            <tr>
+                <td class="tag_table">
+                    accept-charset
+                </td>
+                <td>
+                    Space-separated character encodings the server accepts. The browser uses them in the order in which
+                    they are listed. The default value means the same encoding as the page. (In previous versions of
+                    HTML, character encodings could also be delimited by commas.)
+                </td>
+            </tr>
+            <tr>
+                <td class="tag_table">
+                    autocapitalize
+                </td>
+                <td>
+                    A nonstandard attribute used by iOS Safari that controls how textual form elements should be
+                    automatically capitalized. autocapitalize attributes on a form elements override it on &lt;form&gt;.
+                    Possible values:
+                </td>
+            </tr>
+            <tr>
+                <td class="tag_table">
+                    autocomplete
+                </td>
+                <td>
+                    Indicates whether input elements can by default have their values automatically completed by the
+                    browser. autocomplete attributes on form elements override it on &lt;form&gt&gt;. Possible values:
+                    <ul>
+                        <li>off: The browser may not automatically complete entries. (Browsers tend to ignore this for
+                            suspected login forms; see The autocomplete attribute and login fields.)
+                        </li>
+                        <li> on: The browser may automatically complete entries.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="tag_table">
+                    name
+                </td>
+                <td>
+
+                    The name of the form. The value must not be the empty string, and must be unique among the form elements in the forms collection that it is in, if any.
+                </td>
+            </tr>
+            <tr>
+                <td  class="tag_table">
+                    rel
+                </td>
+                <td>
+                    Controls the annotations and what kinds of links the form creates. Annotations include external, nofollow, opener, noopener, and noreferrer. Link types include help, prev, next, search, and license. The rel value is a space-separated list of these enumerated values.
+                </td>
+            </tr>
+            <tr>
+                <td  class="tag_table">
+                    action
+                </td>
+                <td>
+                    The URL that processes the form submission. This value can be overridden by a formaction attribute on a &lt;button&gt;, &lt;input type="submit"&gt;, or &lt;input type="image"&gt; element. This attribute is ignored when method="dialog" is set.
+                </td>
+            </tr>
+            <tr>
+                <td  class="tag_table">
+                    enctype
+                </td>
+                <td>
+                    If the value of the method attribute is post, enctype is the MIME type of the form submission. Possible values:
+                </td>
+            </tr>
+            <tr>
+                <td  class="tag_table">
+                    method
+                </td>
+                <td>
+                    The HTTP method to submit the form with. The only allowed methods/values are (case insensitive):
+
+                    post: The POST method; form data sent as the request body.
+                    get (default): The GET; form data appended to the action URL with a ? separator. Use this method when the form has no side effects.
+                    dialog: When the form is inside a &lt; dialog &gt;, closes the dialog and throws a submit event on submission without submitting data or clearing the form.
+                    This value is overridden by formmethod attributes on &lt;button&gt;,&lt;input type="submit"&gt;, or &lt;input type="image"&gt; elements.
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="spacer">
+
+    </section>
+
+</main>
+<footer>
+    <a id="impressum" href="https://github.com/BiTy1024">Made by ByTi1024</a>
+</footer>
+</body>
+
+</html>
